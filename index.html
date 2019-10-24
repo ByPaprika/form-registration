@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Registrarion</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+	<form action="index.html" class="form-registration">
+		
+		<h1>Login</h1>
+		
+		<div class="btxt">
+			<input type="text" placeholder="UserName">
+		</div>	
+
+		<div class="btxt">
+			<input type="password" placeholder="Password">
+		</div>
+
+		<div class="btn">
+			<input type="submit" class="tbtn" value="Login">
+			
+		</div>
+
+		<div class="botoom-text">
+			Don't have account?  <a href="#">Sign up</a>
+		</div>
+	</form>
+	<script>
+		$(".btxt input").on("focus", function(){
+			$(this).addClass("focus");
+		});	
+		$(".btxt input").on("blur", function(){
+			if($(this).val() == "")
+				$(this).removeClass("focus");
+		});	 
+	</script>	
+
+	
+</body>
+</html>
